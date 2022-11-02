@@ -1,0 +1,67 @@
+ 
+<head>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+	
+</script>
+
+<script type="text/javascript" language="javascript">
+ $(document).ready(function() {
+
+
+			$("#submit").click(function () {
+				var op = "name=" + $("#Ename").val() +
+				"&age=" + $("#Age").val()+"&salary=" +
+				$("#Salary").val()+"&address=" + $("#Adress").val()+"&Deportment=" + $("#Deportment").val();
+				alert(op);
+			});
+		 
+
+			$("#reset").click(function () {
+				$("#Ename").val('');
+				$("#Age").val('');
+				$("#Salary").val('');
+				$("#Address").val('');
+				$("#Deportment").val('');
+				
+			});
+
+		 });
+ 
+
+	function myfunction() {
+		alert('Hi');
+	}
+	</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Employee_name</td>
+			<td>Employee_addresas</td>
+			<td>Employee_age</td>
+			<td>Employee_Salary</td>
+			<td>Employee_deportment</td>
+		</tr>
+		<tr>
+			<td><input type="text" id="Ename"> </input></td>
+			<td><input type="text" value="Mumbai" readonly="true"
+				id="address"> </input></td>
+			<td><input type="text" id="Age"> </input></td>
+			<td><input type="text" id="Salary"> </input></td>
+			<td><input type="text" id="Deportment"> </input></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td ><input type="text" id="Ename">stdid_number</td>
+			<td>stdname</td>
+			<td>dob_date</td>
+			<td>doj_date</td>
+			
+		</tr>
+		
+	</table>
+	<br>
+			<input type="button" id="reset" label="reset" value="reset" />
+			<input type="button" id="submit" label="Submit" value="Submit" />
+</body>
